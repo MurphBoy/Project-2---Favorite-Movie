@@ -1,0 +1,51 @@
+.main_font {
+    font-family: Calibri;
+}
+
+.head {
+    font-family: Calibri;
+    font-size:large;
+    font-weight: bold;
+    color:rgb(52, 112, 176)
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fitpicture{
+    width: 250px;
+}
+
+t:nth-child(1) {
+    color: red;
+  } 
+
+t:nth-child(2) {
+    color: pink;
+  } 
+
+t:nth-child(3) {
+    color: rgb(255, 221, 0)
+}
+
+t:nth-child(4) {
+    color: red;
+  } 
+
+t:nth-child(5) {
+    color: pink;
+  } 
+
+t:nth-child(6) {
+    color: rgb(255, 221, 0)
+}
+
+t:nth-child(7) {
+    color: red;
+  } 
+
+t:nth-child(8) {
+    color: pink;
+  } 
