@@ -9,43 +9,117 @@
     color:rgb(52, 112, 176)
 }
 
-.wrapper {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .fitpicture{
     width: 250px;
 }
 
 t:nth-child(1) {
-    color: red;
-  } 
+    color: black;
+} 
 
 t:nth-child(2) {
     color: pink;
-  } 
+} 
 
 t:nth-child(3) {
     color: rgb(255, 221, 0)
 }
 
 t:nth-child(4) {
-    color: red;
-  } 
+    color: black;
+} 
 
 t:nth-child(5) {
     color: pink;
-  } 
+} 
 
 t:nth-child(6) {
     color: rgb(255, 221, 0)
 }
 
 t:nth-child(7) {
-    color: red;
-  } 
+    color: black;
+} 
 
 t:nth-child(8) {
     color: pink;
-  } 
+} 
+
+.container_whole_page {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 2fr 8fr 2fr;
+  grid-template-rows: 1fr 30fr 10fr 1fr;
+  grid-template-areas:
+    "header header header"
+    "asideLEFT mainCAST asideRIGHT"
+    "asideLEFT mainPLOT asideRIGHT"
+    "footer footer footer";
+}
+
+header {
+  grid-area: header;
+  background-color: red;
+  text-align: center;
+  font-size: xx-large;
+}
+
+asideLEFT {
+  grid-area: asideLEFT;
+  background-color: black;
+}
+
+mainCAST {
+  grid-area: mainCAST;
+  background-color: rgb(9, 40, 37);
+}
+
+mainPLOT {
+  grid-area: mainPLOT;
+  background-color: rgb(14, 88, 81);
+}
+
+asideRIGHT {
+  grid-area: asideRIGHT;
+  background-color: black;
+}
+  
+footer {
+  grid-area: footer;
+  background-color: red;
+}
+
+h1 {
+  font-style: bold;
+  font-size: xx-large;
+  font-family: Calibri;
+  color: white;
+  text-align: center;
+}
+
+h2 {
+  font-size: xx-large;
+  font-family: Calibri;
+  color: blue;
+  text-align: center;
+}
+
+h3 {
+  font-size: xx-large;
+  font-family: Calibri;
+  color: lightblue;
+  text-align: center;
+}
+
+table {
+  display: flex;
+  gap: 1fr;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.text {
+  background-color: gray;
+  padding: 1rem;
+  flex-grow: 1;
+}
