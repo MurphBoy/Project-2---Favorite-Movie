@@ -1,3 +1,7 @@
+.tab {
+  tab-size: 2;
+}
+
 .main_font {
     font-family: Calibri;
 }
@@ -49,11 +53,12 @@ t:nth-child(8) {
   height: 100%;
   display: grid;
   grid-template-columns: 2fr 8fr 2fr;
-  grid-template-rows: 1fr 70fr 10fr 1fr;
+  grid-template-rows: 1fr 50fr 10fr 5fr 1fr;
   grid-template-areas:
     "header header header"
     "asideLEFT mainCAST asideRIGHT"
     "asideLEFT mainPLOT asideRIGHT"
+    "asideLEFT mainSOURCES asideRIGHT"
     "footer footer footer";
 }
 
@@ -77,6 +82,11 @@ mainCAST {
 mainPLOT {
   grid-area: mainPLOT;
   background-color: rgb(14, 88, 81);
+}
+
+mainSOURCES {
+  grid-area: mainSOURCES;
+  background-color: lime;
 }
 
 asideRIGHT {
@@ -126,21 +136,6 @@ h5 {
   text-align: center;
 }
 
-h6 {
-  font-style: bold;
-  font-size: xx-large;
-  font-family: Calibri;
-  color: white;
-  text-align: center;
-}
-
-h7 {
-  font-size: xx-large;
-  font-family: Calibri;
-  color: grey;
-  text-align: center;
-}
-
 .mainASIDES {
   display: flex;
   gap: 1fr;
@@ -156,7 +151,7 @@ h7 {
 
 .mainCAST {
   display: flex;
-  gap: 70fr;
+  gap: 50fr;
   flex-direction: column;
   flex-wrap: wrap;
 }
@@ -182,13 +177,13 @@ h7 {
 
 .mainSOURCES {
   display: flex;
-  gap: 10fr;
+  gap: 5fr;
   flex-direction: column;
   flex-wrap: wrap;
 }
 
 .textSOURCES {
-  background-color: indigo;
+  background-color: rgb(30, 0, 52);
   margin: 1rem;
   flex-grow: 1;
 }
